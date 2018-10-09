@@ -1,11 +1,18 @@
 function preload() {
     // put preload code here
 }
-
+  var wWidth, wHeight;
 function setup() {
+    if (windowWidth>windowHeight) {
+      wHeight = windowHeight*0.8;
+      wWidth = wHeight;
+    } else {
+      wWidth = windowWidth*0.8;
+      wHeight = wWidth;
+    }
     colorMode(HSB);
     noStroke()
-    createCanvas(800, 800);
+    createCanvas(wWidth, wHeight);
     rectMode(CENTER);
 
 }
@@ -13,7 +20,7 @@ function setup() {
 
 
 var x, y;
-var radius = 15;
+var radius = 13;
 var lerpVar = 0;
 
 function draw() {
