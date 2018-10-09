@@ -32,7 +32,7 @@ function draw() {
   background(200, 30, 20);
     for (x = radius; x < width-radius; x += radius) {
         for (y = radius; y < (height-radius); y += radius) {
-            lerpVar = ((frameCount * 1 / width * x / 100) * (frameCount * 1 / height * y / 100)) % 1;
+            lerpVar = ((frameCount * 0.5 / width * x / 100) * (frameCount * 1 / height * y / 100)) % 1;
             if (lerpVar > 0.5) {
                 lerpVar = 1 - lerpVar;
             }
