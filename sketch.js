@@ -10,6 +10,7 @@ function setup() {
       wWidth = windowWidth*0.8;
       wHeight = wWidth;
     }
+    frameRate(60);
     colorMode(HSB);
     noStroke()
     createCanvas(wWidth, wHeight);
